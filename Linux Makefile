@@ -1,0 +1,6 @@
+SRC = game.c scene.c utilities.c camera.c frog.c image_helper.c image_DXT.c etc1_utils.c SOIL2.c
+TARGET = game
+LIBS = -lglut -lGLU -lGL -lm
+
+$(TARGET): $(SRC)
+	gcc -o $(TARGET) $(SRC) $(LIBS)
